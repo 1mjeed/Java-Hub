@@ -3,7 +3,7 @@ package beginnerquestions;
  
 import java.util.*;
 
-public class Revese_an_Array {
+public class ReverseAnArray {
 
     public static void main(String[] args) {
        
