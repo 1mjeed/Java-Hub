@@ -1,7 +1,5 @@
 package beginnerquestions;
 
-import java.util.*;
-import java.util.List;
 
 public class ReverseString {
 
@@ -21,6 +19,8 @@ public class ReverseString {
             str.append(string.charAt(i));
         }
         System.out.println(str);
+        System.out.println("differ "+str.reverse());
+        
 
     }
 
