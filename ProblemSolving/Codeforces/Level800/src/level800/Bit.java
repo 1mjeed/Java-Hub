@@ -3,7 +3,6 @@ package level800;
 import java.util.Scanner;
 
 public class Bit {
-
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
@@ -14,9 +13,7 @@ public class Bit {
                 x--;
             } else if (v.contains("++")) {
                 x++;
-            }
-            
-
+            }     
         }
         System.out.println(x);
     }
