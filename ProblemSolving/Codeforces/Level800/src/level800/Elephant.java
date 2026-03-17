@@ -1,35 +1,46 @@
- 
 package level800;
 
 import java.util.Scanner;
 
- 
 public class Elephant {
+
+    static Scanner input = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);        
-         int point =0 ;int index =input.nextInt() ; 
-        while (point<index) {
-            if (point==index) {
-                break;
+        int point = 0;
+        int step = input.nextInt();
+        while (step != 0) {
+            if (step >= 5) {
+                point++;
+                step = step - 5;
+            } else if (step == 4) {
+                point++;
+                step = step - 4;
+            } else if (step == 3) {
+                point++;
+                step = step - 3;
+            } else if (step == 2) {
+                point++;
+                step = step - 2;
+            } else if (step == 1) {
+                point++;
+                step = step - 1;
             }
-            if (point+5<index) {
-                point=point+5;
-            }
-            else if (point+4<index) {
-                point=point+4;
-            }
-            else if (point+3<index) {
-                point=point+3;
-            }
-            else if (point+2<index) {
-                point=point+2;
-            }
-            else if (point+1<index) {
-                point=point+1;
-            }
-             }
+
+        }
         System.out.println(point);
-        
+
     }
 
+    void Anotherway() {
+        int x = input.nextInt();
+
+        int steps = x / 5; // عدد الخطوات الكاملة (ذات الحجم 5)
+
+        if (x % 5 != 0) { // إذا كان هناك باقي قسمة (مسافة متبقية)
+            steps++; // الفيل يحتاج خطوة واحدة إضافية فقط
+        }
+
+        System.out.println(steps);
+    }
 }
