@@ -7,9 +7,9 @@ import java.util.Scanner;
 public class NearlyLuckyNumber {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int num = input.nextInt();
+        long num = input.nextLong();
         int x =0 ;
-        int z;
+        long z;
         while (num>0) {
             z=num%10;
             if (z==7 || z==4) {
