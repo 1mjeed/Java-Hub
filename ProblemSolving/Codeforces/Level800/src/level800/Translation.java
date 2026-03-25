@@ -12,7 +12,6 @@ public class Translation {
         int count=0;
         int r = 0 ;
         int l =sc.length()-1;
-        System.out.println(sc.length());
         if (fi.length()==sc.length()) {
             
         for (int i = 0; i < fi.length(); i++) {
@@ -29,3 +28,4 @@ public class Translation {
     }
     }
 
+    
